@@ -1,0 +1,731 @@
+﻿<!doctype html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  
+  <title>使用布萊特灣參與應用程式</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">  
+  <link data-react-helmet="true" rel="preload" as="font" href="https://files.brightcove.com/fonts/balto/baltoweb-ultra.eot" type="font/eot">
+  <link data-react-helmet="true" rel="preload" as="font" href="https://files.brightcove.com/fonts/balto/baltoweb-ultra.woff" type="font/woff">
+  <link data-react-helmet="true" rel="preload" as="font" href="https://files.brightcove.com/fonts/balto/baltoweb-super.eot" type="font/eot">
+  <link data-react-helmet="true" rel="preload" as="font" href="https://files.brightcove.com/fonts/balto/baltoweb-super.woff" type="font/woff">
+  <link data-react-helmet="true" rel="preload" as="font" href="https://files.brightcove.com/fonts/balto/baltoweb-black.eot" type="font/eot">
+  <link data-react-helmet="true" rel="preload" as="font" href="https://files.brightcove.com/fonts/balto/baltoweb-black.woff" type="font/woff">
+  <link data-react-helmet="true" rel="preload" as="font" href="https://files.brightcove.com/fonts/balto/baltoweb-bold.eot" type="font/eot">
+  <link data-react-helmet="true" rel="preload" as="font" href="https://files.brightcove.com/fonts/balto/baltoweb-bold.woff" type="font/woff">
+  <link data-react-helmet="true" rel="preload" as="font" href="https://files.brightcove.com/fonts/balto/baltoweb-medium.eot" type="font/eot">
+  <link data-react-helmet="true" rel="preload" as="font" href="https://files.brightcove.com/fonts/balto/baltoweb-medium.woff" type="font/woff">
+  <link data-react-helmet="true" rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500&amp;display=swap">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/prism.css">
+  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/styles.css">
+  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/landing-page.css">
+  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/tabs.css">
+  <link rel="stylesheet" href="/assets/css/local.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/381443caa8.js" crossorigin="anonymous"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/google-analytics.js"></script>
+  <script src="/assets/js/sajari-head.js"></script>
+</head>
+
+<body class="body">
+
+<header>
+  <div class="div-header">
+    <a href="/"><span class="product-logo" style="font-family:'Balto Web','Public Sans';font-size:2em;font-weight:bold;">布萊特灣參與<sup>™</sup></span></a>
+<!-- GTranslate: https://gtranslate.io/ -->
+<select onchange="doGTranslate(this);"><option value="">選擇語言</option><option value="en|en" translate="No">English</option><option value="en|zh-TW" translate="No">繁體中文</option><option value="en|fr" translate="No">Français</option><option value="en|de" translate="No">Deutsche</option><option value="en|ja" translate="No">日本語</option><option value="en|ko" translate="No">한국어</option><option value="en|es" translate="No">Español</option></select>
+
+<script>
+/* <![CDATA[ */
+function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;if(lang_pair=='')return;var lang=lang_pair.split('|')[1];var plang=location.hostname.split('.')[0];if(plang.length !=2 && plang.toLowerCase() != 'zh-cn' && plang.toLowerCase() != 'zh-tw')plang='en';location.href=location.protocol+'//'+(lang == 'en' ? '' : lang+'.')+location.hostname.replace('www.', '').replace(RegExp('^' + plang + '\\.'), '')+location.pathname+location.search;}
+/* ]]> */
+</script>
+
+    <select id="site_select" class="bcls-select" style="margin-right: 1rem;">
+      <option value="">其他布萊特灣文件</option>
+      
+        
+          <option value="https://support.brightcove.com">文件首頁</option>
+        
+      
+        
+          <option value="https://audience.support.brightcove.com">布萊特灣觀眾</option>
+        
+      
+        
+          <option value="https://beacon.support.brightcove.com">布萊特灣燈塔</option>
+        
+      
+        
+          <option value="https://campaign.support.brightcove.com">布萊特灣戰役</option>
+        
+      
+        
+          <option value="https://engage.support.brightcove.com">布萊特灣參與</option>
+        
+      
+        
+          <option value="https://live.support.brightcove.com">Brightcove Live</option>
+        
+      
+        
+          <option value="https://gallery.support.brightcove.com">Brightcove 圖庫</option>
+        
+      
+        
+          <option value="https://ssai.support.brightcove.com">布萊特灣</option>
+        
+      
+        
+          <option value="https://social.support.brightcove.com">布萊特灣社會</option>
+        
+      
+        
+          <option value="https://studio.support.brightcove.com">視訊雲端工作室</option>
+        
+      
+        
+          <option value="https://player.support.brightcove.com">布萊特灣球員開發</option>
+        
+      
+        
+          <option value="https://apis.support.brightcove.com">視訊雲端平台 API</option>
+        
+      
+        
+          <option value="https://sdks.support.brightcove.com">視訊雲端裝置開發套件</option>
+        
+      
+        
+          <option value="https://integrations.support.brightcove.com">整合與 CMS 連接器</option>
+        
+      
+        
+          <option value="https://general.support.brightcove.com">視訊雲端一般資訊</option>
+        
+      
+        
+          <option value="https://zencoder.support.brightcove.com">Zencoder</option>
+        
+      
+    </select>
+
+
+    <span class="secondary-nav"><a href="https://supportportal.brightcove.com/s/login/?"><img src="https://support.brightcove.com/site-assets/images/site/support.png" alt="支持"/>聯繫支持</a><span style="vertical-align: top;margin-left:1em;margin-right:1em;">|</span><a href="https://status.brightcove.com/"><img src="https://support.brightcove.com/site-assets/images/site/status.png" alt="系統狀態"/>系統狀況</a></span><br/>
+    
+  </div>
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb arr-right">
+      
+      <li class="breadcrumb-item"><a href="/">首頁</a></li>
+      
+      
+      
+      <li class="breadcrumb-item"><a href="/get-started/">開始使用</a></li>
+      
+      <li class="breadcrumb-item active" aria-current="page">使用布萊特灣參與應用程式</li>
+    </ol>
+  </nav>
+</header>
+<div class="container">
+    <div class="row">
+      <div class="col-sm-3 left-side-bar">
+        <nav class="sidenav" id="side_nav">
+          
+            
+            <h5><a href="/index.html">首頁</a></h5>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/get-started/index.html">開始使<strong>用 + </strong></a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/get-started/brightcove-engage-system-requirements.html">布萊特灣接觸系統需求</a></li>
+                  
+                
+                  
+                    <li><a href="/get-started/brightcove-engage-training-videos.html">布萊特灣參與訓練影片</a></li>
+                  
+                
+                  
+                    <li><a href="/get-started/overview-create-edit-publish-mobile-app-exp.html">建立行動應用程式體驗</a></li>
+                  
+                
+                  
+                    <li><a href="/get-started/overview-create-edit-publish-web-exp.html">建立網路體驗</a></li>
+                  
+                
+                  
+                    <li><a href="/get-started/getting-started-brightcove-engage.html">開始使用布萊特灣參與</a></li>
+                  
+                
+                  
+                    <li><a href="/get-started/getting-started-brightcove-engage-trial.html">開始使用您的布萊特灣參與試驗</a></li>
+                  
+                
+                  
+                    <li><a href="/get-started/step-by-step-mobile-app.html">逐步-打造行動應用程式體驗</a></li>
+                  
+                
+                  
+                    <li><a href="/get-started/step-by-step-web-exp.html">一步一步-建立網路體驗</a></li>
+                  
+                
+                  
+                    <li><a href="/get-started/using-brightcove-engage-app.html">使用布萊特灣參與應用程式</a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/videos/index.html">管理視訊<strong> + </strong></a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/videos/adding-text-tracks-to-a-video.html">新增文字軌</a></li>
+                  
+                
+                  
+                    <li><a href="/videos/capturing-poster-and-thumbnail-images.html">擷取海報和縮圖影像</a></li>
+                  
+                
+                  
+                    <li><a href="/videos/configuring-video-availability.html">設定視訊可用性</a></li>
+                  
+                
+                  
+                    <li><a href="/videos/creating-and-managing-playlists.html">建立和管理播放清單</a></li>
+                  
+                
+                  
+                    <li><a href="/videos/editing-video-properties.html">編輯視訊屬性</a></li>
+                  
+                
+                  
+                    <li><a href="/videos/editing-video-properties-using-quick-edit.html">使用快速編輯編輯視訊屬性</a></li>
+                  
+                
+                  
+                    <li><a href="/videos/exporting-video-data.html">匯出視訊資料</a></li>
+                  
+                
+                  
+                    <li><a href="/videos/managing-videos.html">管理視訊</a></li>
+                  
+                
+                  
+                    <li><a href="/videos/how-to-search-for-videos.html">搜尋影片</a></li>
+                  
+                
+                  
+                    <li><a href="/videos/uploading-poster-and-thumbnail-images.html">上傳海報和縮圖影像</a></li>
+                  
+                
+                  
+                    <li><a href="/videos/uploading-videos.html">上傳視訊</a></li>
+                  
+                
+                  
+                    <li><a href="/videos/working-with-shared-videos.html">使用共用的視訊</a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/experiences/index.html">創造體驗<strong> + </strong></a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/experiences/adding-logo-mobile-app-experience.html">將標誌新增至行動應用程式體驗頁面</a></li>
+                  
+                
+                  
+                    <li><a href="/experiences/adding-objects-web-experience-pages.html">新增圖片、文字和連結至網頁體驗頁面</a></li>
+                  
+                
+                  
+                    <li><a href="/experiences/adding-videos-experience.html">將視訊新增至體驗</a></li>
+                  
+                
+                  
+                    <li><a href="/experiences/assigning-custom-domain-web-experience.html">將自訂網域指派給 Web 體驗</a></li>
+                  
+                
+                  
+                    <li><a href="/experiences/configuring-custom-domains-and-ssl.html">設定自訂網域和 SSL </a></li>
+                  
+                
+                  
+                    <li><a href="/experiences/configuring-experience-settings.html">設定體驗設定</a></li>
+                  
+                
+                  
+                    <li><a href="/experiences/configuring-single-sign-active-directory-federation-services.html">使用 ADFS 設定單一登入</a></li>
+                  
+                
+                  
+                    <li><a href="/experiences/controlling-access-experience.html">控制對體驗的存取</a></li>
+                  
+                
+                  
+                    <li><a href="/experiences/creating-access-control-profiles.html">建立存取控制設定檔</a></li>
+                  
+                
+                  
+                    <li><a href="/experiences/creating-and-managing-push-notifications.html">建立推送通知</a></li>
+                  
+                
+                  
+                    <li><a href="/experiences/creating-and-managing-experiences.html">建立和管理體驗</a></li>
+                  
+                
+                  
+                    <li><a href="/experiences/using-experience-editor-customize-mobile-app-experience.html">自訂行動應用程式體驗</a></li>
+                  
+                
+                  
+                    <li><a href="/experiences/using-experience-editor-customize-web-experience.html">自訂網頁體驗</a></li>
+                  
+                
+                  
+                    <li><a href="/experiences/editing-experience-details.html">編輯體驗詳細資料</a></li>
+                  
+                
+                  
+                    <li><a href="/experiences/managing-collections.html">管理收藏</a></li>
+                  
+                
+                  
+                    <li><a href="/experiences/managing-projects.html">管理專案</a></li>
+                  
+                
+                  
+                    <li><a href="/experiences/overview-experience-templates.html">體驗範本概觀</a></li>
+                  
+                
+                  
+                    <li><a href="/experiences/previewing-publishing-mobile-app-experience.html">預覽和發佈行動應用程式體驗</a></li>
+                  
+                
+                  
+                    <li><a href="/experiences/previewing-publishing-web-experience.html">預覽和發佈網頁體驗</a></li>
+                  
+                
+                  
+                    <li><a href="/experiences/securing-web-experience-ssl.html">使用 SSL 保護網頁體驗</a></li>
+                  
+                
+                  
+                    <li><a href="/experiences/securing-experiences-auth0.html">使用 Auth0 保護體驗</a></li>
+                  
+                
+                  
+                    <li><a href="/experiences/securing-experiences-passwordless.html">使用 Auth0 無密碼保護體驗</a></li>
+                  
+                
+                  
+                    <li><a href="/experiences/securing-experiences-okta.html">使用 Okta 保護體驗</a></li>
+                  
+                
+                  
+                    <li><a href="/experiences/securing-experiences-pingone.html">保護使用 PingOne 的體驗</a></li>
+                  
+                
+                  
+                    <li><a href="/experiences/styling-mobile-app-experiences.html">設計行動應用程式體驗</a></li>
+                  
+                
+                  
+                    <li><a href="/experiences/styling-web-experiences.html">設定網路體驗樣式</a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/live/index.html">管理即時活動<strong> + </strong></a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/live/creating-and-managing-live-events-using-live-module.html">建立與管理即時事件</a></li>
+                  
+                
+                  
+                    <li><a href="/live/creating-video-clips.html">建立視訊片段</a></li>
+                  
+                
+                  
+                    <li><a href="/live/viewing-live-event-info-control-room.html">使用控制室</a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/analytics/index.html">檢閱分析<strong> + </strong></a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/analytics/reviewing-video-analytics.html">檢閱視訊分析</a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/admin/index.html">管理帳號<strong> + </strong></a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/admin/managing-account-information.html">管理帳戶資訊</a></li>
+                  
+                
+                  
+                    <li><a href="/admin/managing-account-settings.html">管理帳戶設定</a></li>
+                  
+                
+                  
+                    <li><a href="/admin/managing-media-sharing-settings.html">管理媒體共用設定</a></li>
+                  
+                
+                  
+                    <li><a href="/admin/managing-profile-information.html">管理設定檔資訊</a></li>
+                  
+                
+                  
+                    <li><a href="/admin/managing-users.html">管理使用者</a></li>
+                  
+                
+                  
+                    <li><a href="/admin/managing-video-fields.html">管理視訊欄位</a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/release-notes/index.html">版本說明<strong> + </strong></a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/release-notes/2020.html">2020 </a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/support/index.html">支援<strong> + </strong></a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/support/brightcove-answer.html">布萊特灣答案</a></li>
+                  
+                
+                  
+                    <li><a href="/support/viewing-brightcove-system-status-page.html">檢視布萊特灣系統狀態頁面</a></li>
+                  
+                
+                  
+                    <li><a href="/support/contact-sales.html">聯絡銷售人員</a></li>
+                  
+                
+                  
+                    <li><a href="/support/opening-case-with-brightcove-support.html">開啟支援案例</a></li>
+                  
+                
+              </ul>
+            
+          
+      </nav>
+    </div>
+    <div class="col-lg-7" style="background-color: white;color: #333333;margin-top: -1em;margin-bottom: -1em;padding-bottom:1em;">
+  <!-- bootstrap layout -->
+
+<p id="bc_veggie_burger_wrapper" style="display: none;"><img id="bc_veggie_burger" src="/assets/images/feather/menu.svg" alt="導覽功能表"/></p>
+
+<!-- search bar -->
+<div id="nav-search-box" style="margin-top: 1rem;"></div>
+<!-- in-page navigation for narrow screens -->
+<details class="centered-inpage-nav" id="centered_inpage_nav">
+  <summary><h6 class="toc">頁面內容</h6></summary>
+  <nav id="centered_toc"></nav>
+  <ul id="centered_in_page_toc" class="list-none"></ul>
+</details>
+<!-- open in new tab/window -->
+<a id="open_new_tab" href="#" target="_blank" style="display: none;"><img src="/assets/images/feather/external-link.svg" alt="在新分頁中開啟" style="margin-top:4em;width: 1.5em;"/></a>
+
+
+
+  
+    
+
+
+<article class="bcls-article">
+  <h1>使用布萊特灣參與™ 應用程式</h1>
+  <summary>在本主題中，您將學習如何在行動裝置上安裝和使用 BrightCove Entplication 應用程式。</summary>
+  <section class="bcls-section">
+    <p>發佈行動應用程式體驗會產生 Brightcove Entence 應用程式在行動裝置上存取體驗所需的存取金鑰。本主題涵蓋布萊特灣參與應用程式的安裝和基本導覽。</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="install_ios">安裝 iOS 原生應用程式</h2>
+    <p>您可以在執行 iOS &nbsp; 11 或更新版本的 iOS 裝置上安裝「亮灣互動」行&nbsp;動應用程式。請依照下列步驟安裝應用程式。</p>
+    <ol class="bcls-tasklist-restart" style="--s:1">
+      <li>打開&nbsp;<strong>應用商店</strong>&nbsp;在您的設備上。</li>
+      <li>搜索&nbsp; Brightcove Engage應用程序。</li>
+      <li>點按&nbsp;<strong>得到</strong>&nbsp;下載並安裝該應用程序。</li>
+      <li>點一下「&nbsp;<strong>開</strong>啟」&nbsp;或開啟裝置上的「&nbsp;<strong>布萊特灣互動</strong>」&nbsp;應用程式。布萊特灣建議允許應用程式傳送通知給您。這將允許應用程序管理員發送有關在應用程序中發布的新內容的通知給您。</li>
+      <li>輸入<strong>訪問密鑰</strong>的經驗。
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/get-started/ios-welcome.png"/></figure>
+      </li>
+      <li>按<strong>一下下一步</strong>。</li>
+    </ol>
+    <p>視體驗的設定方式而定，系統可能也會提示您輸入公司認證以存取應用程式。</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="install_android">安裝安卓原生應用程式</h2>
+    <p>您可以在執行 Android &nbsp; 5.0 或更新版本的 Android 裝置上安裝&nbsp;布萊特灣互動行動應用程式。請依照下列步驟安裝應用程式。</p>
+    <ol class="bcls-tasklist-restart" style="--s:1">
+      <li>打開&nbsp;<strong>Google Play商店</strong>&nbsp;在您的設備上。</li>
+      <li>搜索&nbsp; Brightcove Engage應用程序，然後點擊&nbsp;<strong>安裝</strong>&nbsp;下載並安裝該應用程序。</li>
+      <li>點一下「&nbsp;<strong>開</strong>啟」&nbsp;或開啟裝置上的「&nbsp;<strong>布萊特灣互動</strong>」&nbsp;應用程式。布萊特灣建議允許應用程式傳送通知給您。這將允許應用程序管理員發送有關在應用程序中發布的新內容的通知給您。</li>
+      <li>輸入體驗的存取金鑰。
+        <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/get-started/android-welcome.png"/></figure>
+      </li>
+      <li>按<strong>一下下一步</strong>。</li>
+    </ol>
+    <p>視體驗的設定方式而定，系統可能也會提示您輸入公司認證以存取應用程式。</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="navigate">在應用程式內瀏覽</h2>
+    <p>當您開啟應用程式時，精選影片會出現在頂端，其餘的收藏會出現在精選影片下方。</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/get-started/app-layout.png"/></figure>
+    <p>向下捲動以查看所有選集，並向右捲動以查看收藏中的影片。請點擊<strong>查看全部</strong>打開頁面以查看收藏集中所有視頻的列表。請點擊<strong>&lt;</strong>在應用程序頂部，導航回上一頁。應用程式將使用您裝置上的語言設定來設定應用程式中使用的語言。支持以下語言：</p>
+    <ul>
+      <li>英文 (美國)</li>
+      <li>西班牙文 (ES)</li>
+      <li>法語 (FR)</li>
+      <li>日本語 (JP)</li>
+      <li>韓語 (KO)</li>
+      <li> 中文 (ZH)</li>
+    </ul>
+    <p>在影片播放期間，將裝置旋轉至橫向模式將以全螢幕模式播放影片。</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="update">更新應用程式</h2>
+    <p>對應用程式所做的任何變更，必須在 Bright湾參與應用程式內重新公佈。這可能包括樣式變更或變更視訊集合。發佈變更之後，使用者可以在應用程式上向下滑動，讓應用程式更新最新發佈的變更。</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="search">搜尋影片</h2>
+    <p>搜索圖標（<img class="bcls-image--no-border" alt="" src="/assets/images/get-started/search-icon.png"/>應用頂部的）可用於搜索視頻。只會搜尋體驗中的影片。將搜尋下列視訊屬性：</p>
+    <ul>
+      <li>名字</li>
+      <li>簡短描述</li>
+      <li>完整描述</li>
+      <li>標籤</li>
+      <li>視訊 ID</li>
+      <li>所有自訂欄位</li>
+    </ul>
+  </section>
+  <section class="bcls-section">
+    <h2 id="profile">檢視設定檔頁面</h2>
+    <p>點擊個人資料圖標（<img class="bcls-image--no-border" alt="" src="/assets/images/get-started/user-profile-icon.png"/>），將在應用程序頂部打開“個人資料”頁面。如果將“隱私權政策”，“條款和條件”以及“幫助聯繫人電子郵件”作為<a href="/experiences/editing-experience-details.html">體驗細節</a>。</p>
+    <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/get-started/mobile-app-profile-page.png"/></figure>
+    <h3>變更存取金鑰</h3>
+    <p>如果設定 SSO，設定檔頁面也會顯示用來登入應用程式的使用者名稱和電子郵件。</p>
+    <p>
+      <figure class="bcls-figure"><img class="bcls-image--no-border" alt="" src="/assets/images/get-started/mobile-app-profile-page-sso.png"/></figure>
+    </p>
+    <p>要更改訪問密鑰，請單擊<strong>登出</strong>。</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="diffs">玩家在網絡與互動應用程序的差異</h2>
+    <p>下列玩家的差異將會在網路播放器與「互動」應用程式中使用的播放器有所不同。</p>
+    <ul>
+      <li>在網絡播放器的顏色不等同於移動同行</li>
+      <li>應用程式第一次緩衝或載入時，行動應用程式上會出現載入指示器</li>
+      <li>移動應用程序支持方向更改</li>
+      <li>音量是使用手機本身而不是從媒體控制欄控制</li>
+      <li>網頁播放程式中看不到媒體播放速率控制項 </li>
+    </ul>
+  </section>
+</article>
+
+<!-- complete bootstrap layout -->
+    </div>
+    <div class="col-sm-2 right-side-bar">
+      
+      <nav class="right-side-nav" id="right_side_nav">
+        <h6 class="toc">頁面內容</h6>
+        <ul id="in_page_nav" class="list-none"></ul>
+      </nav>
+      
+    </div>
+  </div>
+</div>
+
+<hr>
+<div class="last-updated">
+  頁面最後更新日期為 8 月 11 日
+</div>
+
+
+
+<footer class="bcls-footer" role="contentinfo">
+  <div class="row">
+    <div class="region region-footer-top-center col-md-12">
+      <nav role="navigation" aria-labelledby="block-brightcovesupport-menu" id="block-brightcovesupport" class="footer-menu">
+
+        <h2>布萊特灣支援</h2>
+
+        <ul class="menu">
+          <li>
+            <a href="https://status.brightcove.com">系統狀態</a>
+          </li>
+          <li>
+            <a href="https://supportportal.brightcove.com/s/login/?">聯絡支援</a>
+          </li>
+          <li>
+            <a href="https://support.brightcove.com/">文獻資料</a>
+          </li>
+        </ul>
+
+      </nav>
+      <nav role="navigation" aria-labelledby="block-training-menu" id="block-training" class="footer-menu">
+
+        <h2>訓練</h2>
+
+        <ul class="menu">
+          <li>
+            <a href="https://studio.support.brightcove.com/training/online-training-courses.html">線上課程</a>
+          </li>
+          <li>
+            <a href="https://studio.support.brightcove.com/training/register-training.html">註冊課程</a>
+          </li>
+          <li>
+            <a href="https://university.brightcove.com/">布萊特灣大學</a>
+          </li>
+        </ul>
+
+      </nav>
+      <nav role="navigation" aria-labelledby="block-brightcove-menu" class="footer-menu">
+
+        <h2>Brightcove</h2>
+
+        <ul class="menu">
+          <li>
+            <a href="https://www.brightcove.com">亮麗</a>
+          </li>
+          <li>
+            <a href="https://supportportal.brightcove.com/s/login/?">聯絡我們</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="row">
+    <div class="region region-footer-bottom-center col-md-12">
+      <div class="bcls-copyright footer-menu">
+        <table>
+          <tr>
+            <td>
+              <div id="bc_copyright" class="field field--name-field-copyright-year field--type-string field--label-hidden field--item" style="float: left;"> 布萊特灣公司版權所有</div>
+            </td>
+            <td><a href="https://www.brightcove.com/en/legal/privacy">私隱</a> | 條<a href="https://www.brightcove.com/en/terms-and-conditions">款及細則</a></td>
+            <td>
+              <div class="gf-links-cols footer-menu">
+                <div class="gf-social"><a href="https://www.linkedin.com/company/16439" title="LinkedIn" newtab="newtab" class="gf-social-linkedin"><i class="fab fa-linkedin-in" style="font-size: 1.5rem;"></i></a><a href="https://twitter.com/brightcove" title="Twitter" newtab="newtab" class="gf-social-twitter"><i class="fab fa-twitter" style="font-size: 1.5rem;"></i></a><a href="https://www.facebook.com/Brightcove" title="Facebook" newtab="newtab" class="gf-social-facebook"><i class="fab fa-facebook-f" style="font-size: 1.5rem;"></i></a>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</footer>
+<div id="talla_wrapper">
+  <p style="text-align: right;position: relative;"><button style="background:rgb(2, 28, 146);color:Snow;padding:.3rem;position:fixed;right:0;bottom:1em;z-index:9999999" onclick="javascript:displayChat()">有問題嗎？ </button> </p>
+  <div id="talla_chat">
+</div>
+</div>
+<script>
+      
+  var searchBox = sajari.init({
+    mode: "search-box",
+    project: "1588255093746585379", // Set this to your project.
+    collection: "brightcove-documenation", // Set this to your collection.
+    instantPipeline: "autocomplete", // Pipeline used as you type
+    inputPlaceholder: "Search", // Input element placeholder
+    maxSuggestions: 5, // Maximum number of suggestions to show
+    attachSearchBox: document.getElementById("nav-search-box") // DOM element to attach to
+  });
+  
+    searchBox("sub", "pipeline.search-sent", function (_, query) {
+      window.location = "/search.html?q=" + encodeURIComponent(query.q);
+    });
+  
+
+</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/https-fix.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/setDate.js"></script>
+  
+  <script src="https://support.brightcove.com/site-assets/js/site/prism.js"></script>
+  
+  <script src="https://support.brightcove.com/site-assets/js/site/site.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/tabs.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/toc.js"></script>
+  <script src="/assets/js/sites_nav.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/bcls-utils.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/local-link-fix.js"></script>
+  <script src="/assets/js/feedback.js"></script>
+  
+  <script src="/assets/js/sajari-search-foot.js"></script>
+  
+  <!-- <script src="/assets/js/sajari-index.js"></script> -->
+  <script src="https://assets.talla.com/latest/embeddedjs/talla.js"></script>
+  <script src="/assets/js/talla-init.js"></script>
+  <style>
+    a.sj-paginator__page-number.sj-paginator__page-number--current.css-so0ov7 {
+      background-color: lightblue;
+    }
+    div.sj-tabs__tab {
+      margin-top: 3rem;
+      margin-left: .3rem;
+      border-top-left-radius: .4rem;
+      border-top-right-radius: .4rem;
+      background-color:#e8e8e8;
+    }
+
+    div.sj-tabs__tab.sj-tabs__tab--selected {
+      border-bottom-color: crimson;
+      background-color: #f8f8f8;
+    }
+
+    p.sj-results__result__description.css-p9jvyt {
+      font-size: 1rem;
+    }
+
+    .sj-result__text.css-31l7gp h3 {
+      color: navy;
+      font-size: 1.4rem;
+    }
+    </style>
+
+</body>
+
+</html>
